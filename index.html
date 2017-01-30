@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background-image:url("http://cdn.paper4pc.com/?module=images&act=downloadResize&file=diamond-wallpaper-23.jpg&x=1920x1440&y=");
+  background-repeat:no-repeat;
+}
+div {
+  height: 280px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius:  50px 50px 0px 0px;
+  border-color: purple;
+  border-width: medium;
+  border-style:solid;
+}
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  text-align: center;
+  font-size: 70px;
+  color: pink;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: pink;
+  margin: 0px 0 70px 0;
+   font: italic 25px Georgia, serif;
+}
+p {
+  color: #FAB7DB;
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("http://www.worldofwedding.com/DeveloperImages/Image/WOW-Image-996517-30032015021028781AM.jpg");
+}
+.second{
+  background-image: url("http://www.worldofwedding.com/DeveloperImages/Image/WOW-Image-496712-08042015062731719AM.jpg");
+}
+.third{
+  background-image: url("http://www.worldofwedding.com/images/btm5.jpg");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>Wedding World</h1>
+<h2>Hire with confidence</h2>
+<div class="first">
+  <p> The Bride, The Groom And Their Attire <span class="price">$500-$2000</span><br />
+  <small>So you are all set to tie the knot.  And with a promise to be together for everything in life you are going to be true soul mates now.  We suggest why not flaunt your togetherness in your sartorial statement as well. Make your wedding a picture perfect event with your attires blending as perfectly as your personalities. </small></p>
+</div>
+
+<div class="second">
+  <p>Jwellery For Traditional bride <span class="price">$2500-$3000</span><br />
+  <small>As a bride embarks upon a new journey, she wants to look her awesome best on the most memorable day of her life. She starts looking for her perfect bridal lehenga and complimentary jewelry months before her wedding day. The major focus on the wedding day is usually the fascinating jewelry she flashes.
+</small></p>
+</div>
+
+<div class="third">
+  <p>Tent & decoration <span class="price">$2000-$5000</span><br />
+  <small> When it comes to a Bollywood wedding we understand you want to make it grand.  If that’s what you have always dreamt of just remember your wedding should be a bash of colour and style. Make it as flamboyant as ever; don’t miss to add style in something as small as the mandap décor.</small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
